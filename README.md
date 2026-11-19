@@ -7,7 +7,7 @@ This is my single-page responsive portfolio website for my HCI lab assignment. I
 - I organized the page in `index.html` using semantic HTML sections.
 - I kept the website's styling in a separate `style.css` file.
 - I used CSS Flexbox, media queries, and responsive spacing to adapt the layout for desktop and mobile screens.
-- I chose a dark theme with hex color values and contrasting section headings.
+- I defined light and dark palettes with hex color values and contrasting section headings.
 
 ## What I added
 
@@ -18,4 +18,10 @@ This is my single-page responsive portfolio website for my HCI lab assignment. I
 - Hover effects, smooth scrolling, and readable text.
 - Separate editable desktop and mobile designs in Figma.
 
-I added JavaScript in `script.js` to highlight the section I’m reading in the navigation bar. As I scroll between About, Experience, and Contact, the current link changes color, gains an underline, and is marked as current for screen readers.
+## Interactive features
+
+- Light and dark modes follow the system preference initially and remember the selected theme when storage is available.
+- The mobile navigation expands within the sticky header. The active section is underlined, and a progress bar tracks scrolling.
+- The bottom-right arrow opens shortcuts to the top and earlier sections. Both shortcut menus support mouse hover and touchscreen taps.
+- The headline types out before the roles cycle beneath it with a blinking caret. A soft gradient moves behind the introduction.
+- A ring around the mouse pointer grows over interactive controls. Reduced-motion settings turn off the typing, gradient movement, and pointer effect.

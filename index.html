@@ -9,17 +9,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="cursor-ring" aria-hidden="true" hidden></div>
   <a class="skip-link" href="#main">Skip to content</a>
   <!-- Sticky navigation stays visible as the page scrolls. -->
   <header class="site-header">
     <nav class="navigation" aria-label="Main navigation">
       <a class="logo" href="#home" aria-label="Shreyas home">shreyas<span>.</span></a>
-      <div class="nav-links">
+      <div class="nav-controls">
+        <button class="theme-toggle" type="button" hidden>Light mode</button>
+        <button class="menu-toggle" type="button" aria-label="Navigation menu" aria-controls="nav-links" aria-expanded="false" hidden>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
+    <div class="scroll-progress" aria-hidden="true"></div>
   </header>
 
   <main id="main">
@@ -28,7 +36,11 @@
         <img class="portrait" src="images/shreyas.jpg" alt="Shreyas Jingade sitting on a garden bench" width="2252" height="4000" fetchpriority="high">
       </div>
       <p class="eyebrow">HELLO, I'M SHREYAS JINGADE</p>
-      <h1 id="hero-title">I learn by building.<br>I grow through <span>experience.</span></h1>
+      <h1 id="hero-title">I learn by building.<br>I grow through <span class="headline-accent">experience.</span></h1>
+      <p class="hero-role">
+        <span class="role-fallback">Computer Science Student</span>
+        <span class="role-animation" aria-hidden="true"><span class="role-text"></span><span class="typing-caret"></span></span>
+      </p>
       <p class="hero-description">A student exploring software development, solving problems with Java, and bringing ideas to life through code.</p>
       <div class="hero-actions">
         <a class="button button-primary" href="#experience">Explore my experience <span aria-hidden="true">↗</span></a>
@@ -36,7 +48,7 @@
       </div>
       <div class="toolkit" aria-label="Areas of interest">
         <span class="toolkit-label">LEARNING & BUILDING WITH</span>
-        <ul><li>Java</li><li>OOP</li><li>Data Structures</li><li>HTML & CSS</li></ul>
+        <ul><li>Java</li><li>OOP</li><li>Data Structures</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
       </div>
       <a class="scroll-link" href="#about">A little more about me <span aria-hidden="true">↓</span></a>
     </section>
@@ -79,6 +91,15 @@
       </div>
     </section>
   </main>
+
+  <details class="scroll-shortcuts" hidden>
+    <summary class="back-to-top" aria-label="Jump up"><span aria-hidden="true">↑</span></summary>
+    <nav aria-label="Jump to an earlier section">
+      <a href="#home">Top</a>
+      <a href="#about" hidden>About</a>
+      <a href="#experience" hidden>Experience</a>
+    </nav>
+  </details>
 
   <footer class="site-footer"><p>© 2026 Shreyas Jingade</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
