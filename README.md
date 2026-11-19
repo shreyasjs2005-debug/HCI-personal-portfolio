@@ -18,4 +18,4 @@ This is my single-page responsive portfolio website for my HCI lab assignment. I
 - Hover effects, smooth scrolling, and readable text.
 - Separate editable desktop and mobile designs in Figma.
 
-The website uses HTML and CSS without JavaScript.
+I added JavaScript in `script.js` to highlight the section I’m reading in the navigation bar. As I scroll between About, Experience, and Contact, the current link changes color, gains an underline, and is marked as current for screen readers.
