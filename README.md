@@ -1,29 +1,51 @@
-# Personal Portfolio Website
+# Shreyas Jingade | Responsive Portfolio
+
+## Project overview
+
+I built this single-page portfolio for my Human–Computer Interaction (HCI) lab at BINUS University International. It introduces me as a Computer Science student and highlights my Java Supermarket Finding List, a final project for Data Structures and Object-Oriented Programming.
 
 [View the live portfolio](https://shreyasjs2005-debug.github.io/HCI-personal-portfolio/)
 
-This is my single-page responsive portfolio website for my HCI lab assignment. It introduces me, describes my learning experience, and presents my Java final project.
+## Purpose and audience
+
+I wanted to practice responsive web design and present my coursework in a way classmates, lecturers, and prospective recruiters can browse on a phone or computer.
+
+## Design and page layout
+
+I used separate Figma layouts for [desktop](https://www.figma.com/design/HDX137r6z3EeWP8JXfeiDX?node-id=3-2) and [mobile](https://www.figma.com/design/ekrxo9BxkTnwsfmW3kyw4i?node-id=2-2) to plan how the portfolio would adapt to different screen sizes.
+
+| Section | Content |
+| --- | --- |
+| Home | My portrait, introduction, animated tagline, and areas of interest |
+| About | My background and what I’m learning in software development |
+| Experience | My Java project and how it applied data structures and OOP |
+| Contact | A direct email link |
 
 ## How I built it
 
-- I organized the page in `index.html` using semantic HTML sections.
-- I kept the website's styling in a separate `style.css` file.
-- I used CSS Flexbox, media queries, and responsive spacing to adapt the layout for desktop and mobile screens.
-- I defined light and dark palettes with hex color values and contrasting section headings.
+- **HTML** defines the page sections, navigation, and content.
+- **CSS** uses Flexbox, Grid, and media queries to adapt the layout for desktop, tablet, and mobile. CSS variables define the light and dark palettes.
+- **JavaScript** handles theme switching, the mobile menu, scroll tracking, and the typing animation.
 
-## What I added
+On narrow screens, the hamburger menu expands the header and moves the portrait down. The bottom-right arrow opens shortcuts to earlier sections. Both menus support mouse hover and touch. The site also follows the device’s reduced-motion preference by showing static hero text and a still gradient.
 
-- A navigation bar that stays visible while scrolling.
-- An introduction and an About section.
-- An Experience section about my Java Supermarket Finding List project for Data Structures and Object-Oriented Programming.
-- A centered Contact section.
-- Hover effects, smooth scrolling, and readable text.
-- Separate editable desktop and mobile designs in Figma.
+## Run locally
 
-## Interactive features
+```bash
+git clone https://github.com/shreyasjs2005-debug/HCI-personal-portfolio.git
+cd HCI-personal-portfolio
+```
 
-- Light and dark modes follow the system preference initially and remember the selected theme when storage is available.
-- The mobile navigation expands within the sticky header. The active section is underlined, and a progress bar tracks scrolling.
-- The bottom-right arrow opens shortcuts to the top and earlier sections. Both shortcut menus support mouse hover and touchscreen taps.
-- The headline types out before the roles cycle beneath it with a blinking caret. A soft gradient moves behind the introduction.
-- A ring around the mouse pointer grows over interactive controls. Reduced-motion settings turn off the typing, gradient movement, and pointer effect.
+Open `index.html` in your browser, or open the folder in VS Code and launch `index.html` with Live Server.
+
+## Repository structure
+
+```text
+HCI-personal-portfolio/
+├── index.html
+├── style.css
+├── script.js
+├── images/
+│   └── shreyas.jpg
+└── README.md
+```
