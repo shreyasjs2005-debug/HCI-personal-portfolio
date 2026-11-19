@@ -1,5 +1,7 @@
 # Personal Portfolio Website
 
+[View the live portfolio](https://shreyasjs2005-debug.github.io/HCI-personal-portfolio/)
+
 This is my single-page responsive portfolio website for my HCI lab assignment. It introduces me, describes my learning experience, and presents my Java final project.
 
 ## How I built it
